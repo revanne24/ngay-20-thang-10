@@ -993,52 +993,58 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
-/* Hiệu ứng bong bóng bay lên */
+/* Vị trí ngẫu nhiên và tạo hình tròn cho các ảnh */
 .balloons {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .balloon {
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 80px;
-  height: 120px;
-  transform: translateX(-50%);
-  animation: float 10s infinite linear;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Tạo hình tròn */
+  object-fit: cover;  /* Đảm bảo hình ảnh hiển thị đẹp trong hình tròn */
+  animation: float 15s infinite ease-in-out;
 }
 
+/* Các vị trí ngẫu nhiên cho từng bong bóng */
+.balloon-1 { top: 10%; left: 15%; animation-duration: 18s; }
+.balloon-2 { top: 20%; left: 35%; animation-duration: 17s; }
+.balloon-3 { top: 30%; left: 55%; animation-duration: 16s; }
+.balloon-4 { top: 40%; left: 75%; animation-duration: 19s; }
+.balloon-5 { top: 50%; left: 25%; animation-duration: 14s; }
+.balloon-6 { top: 60%; left: 45%; animation-duration: 20s; }
+.balloon-7 { top: 70%; left: 65%; animation-duration: 15s; }
+.balloon-8 { top: 80%; left: 85%; animation-duration: 22s; }
+.balloon-9 { top: 90%; left: 10%; animation-duration: 18s; }
+.balloon-10 { top: 15%; left: 30%; animation-duration: 21s; }
+.balloon-11 { top: 25%; left: 50%; animation-duration: 16s; }
+.balloon-12 { top: 35%; left: 70%; animation-duration: 19s; }
+.balloon-13 { top: 45%; left: 15%; animation-duration: 17s; }
+.balloon-14 { top: 55%; left: 35%; animation-duration: 13s; }
+.balloon-15 { top: 65%; left: 55%; animation-duration: 21s; }
+.balloon-16 { top: 75%; left: 75%; animation-duration: 14s; }
+.balloon-17 { top: 85%; left: 20%; animation-duration: 16s; }
+.balloon-18 { top: 95%; left: 40%; animation-duration: 18s; }
+.balloon-19 { top: 20%; left: 60%; animation-duration: 12s; }
+.balloon-20 { top: 30%; left: 80%; animation-duration: 23s; }
+.balloon-21 { top: 40%; left: 10%; animation-duration: 20s; }
+.balloon-22 { top: 50%; left: 30%; animation-duration: 15s; }
+.balloon-23 { top: 60%; left: 50%; animation-duration: 22s; }
+.balloon-24 { top: 70%; left: 70%; animation-duration: 19s; }
+
+/* Tạo hiệu ứng bay ngẫu nhiên */
 @keyframes float {
   0% {
-    transform: translate(-50%, 0);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-50px) scale(1.1); /* Bong bóng hơi phồng lên khi bay */
   }
   100% {
-    transform: translate(-50%, -100vh);
+    transform: translateY(0) scale(1);
   }
 }
-
-/* Điều chỉnh vị trí và thời gian bay của từng bong bóng */
-.balloon-1 { left: 10%; animation-duration: 12s; }
-.balloon-2 { left: 20%; animation-duration: 13s; }
-.balloon-3 { left: 30%; animation-duration: 14s; }
-.balloon-4 { left: 40%; animation-duration: 15s; }
-.balloon-5 { left: 50%; animation-duration: 16s; }
-.balloon-6 { left: 60%; animation-duration: 17s; }
-.balloon-7 { left: 70%; animation-duration: 18s; }
-.balloon-8 { left: 80%; animation-duration: 19s; }
-.balloon-9 { left: 90%; animation-duration: 20s; }
-.balloon-10 { left: 10%; animation-duration: 11s; }
-.balloon-11 { left: 20%; animation-duration: 12.5s; }
-.balloon-12 { left: 30%; animation-duration: 13.5s; }
-.balloon-13 { left: 40%; animation-duration: 14.5s; }
-.balloon-14 { left: 50%; animation-duration: 15.5s; }
-.balloon-15 { left: 60%; animation-duration: 16.5s; }
-.balloon-16 { left: 70%; animation-duration: 17.5s; }
-.balloon-17 { left: 80%; animation-duration: 18.5s; }
-.balloon-18 { left: 90%; animation-duration: 19.5s; }
-.balloon-19 { left: 15%; animation-duration: 11.5s; }
-.balloon-20 { left: 25%; animation-duration: 12.5s; }
-.balloon-21 { left: 35%; animation-duration: 13.5s; }
-.balloon-22 { left: 45%; animation-duration: 14.5s; }
-.balloon-23 { left: 55%; animation-duration: 15.5s; }
-.balloon-24 { left: 65%; animation-duration: 16.5s; }
