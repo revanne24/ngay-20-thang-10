@@ -1003,40 +1003,41 @@ body {
 
 .balloon {
   position: absolute;
-  width: 200px; /* Gấp đôi kích thước */
-  height: 200px; /* Gấp đôi kích thước */
-  border-radius: 50%; /* Giữ hình dạng tròn */
+  width: 150px; 
+  height: 150px;
+  clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 80%, 18% 100%, 0% 35%);
   object-fit: contain; /* Đảm bảo ảnh không bị cắt xén */
   animation: float 15s infinite ease-in-out;
   z-index: 10; /* Đảm bảo bong bóng đè lên các yếu tố khác */
 }
 
 
-/* Phân bố lại các vị trí của bong bóng */
-.balloon-1 { top: 5%; left: 10%; animation-duration: 18s; }
-.balloon-2 { top: 15%; left: 30%; animation-duration: 17s; }
-.balloon-3 { top: 25%; left: 50%; animation-duration: 16s; }
-.balloon-4 { top: 35%; left: 70%; animation-duration: 19s; }
-.balloon-5 { top: 45%; left: 90%; animation-duration: 14s; }
-.balloon-6 { top: 55%; left: 15%; animation-duration: 20s; }
-.balloon-7 { top: 65%; left: 35%; animation-duration: 15s; }
-.balloon-8 { top: 75%; left: 55%; animation-duration: 22s; }
-.balloon-9 { top: 85%; left: 75%; animation-duration: 18s; }
-.balloon-10 { top: 95%; left: 5%; animation-duration: 21s; }
-.balloon-11 { top: 5%; left: 25%; animation-duration: 16s; }
-.balloon-12 { top: 15%; left: 45%; animation-duration: 19s; }
-.balloon-13 { top: 25%; left: 65%; animation-duration: 17s; }
-.balloon-14 { top: 35%; left: 85%; animation-duration: 13s; }
-.balloon-15 { top: 45%; left: 10%; animation-duration: 21s; }
-.balloon-16 { top: 55%; left: 30%; animation-duration: 14s; }
-.balloon-17 { top: 65%; left: 50%; animation-duration: 16s; }
-.balloon-18 { top: 75%; left: 70%; animation-duration: 18s; }
-.balloon-19 { top: 85%; left: 90%; animation-duration: 12s; }
-.balloon-20 { top: 95%; left: 20%; animation-duration: 23s; }
-.balloon-21 { top: 10%; left: 40%; animation-duration: 20s; }
-.balloon-22 { top: 20%; left: 60%; animation-duration: 15s; }
-.balloon-23 { top: 30%; left: 80%; animation-duration: 22s; }
-.balloon-24 { top: 40%; left: 5%; animation-duration: 19s; }
+/* Phân bố lại các vị trí của bong bóng theo hình trái tim */
+.balloon-1 { top: 20%; left: 50%; animation-duration: 18s; }
+.balloon-2 { top: 10%; left: 45%; animation-duration: 17s; }
+.balloon-3 { top: 10%; left: 55%; animation-duration: 16s; }
+.balloon-4 { top: 30%; left: 40%; animation-duration: 19s; }
+.balloon-5 { top: 30%; left: 60%; animation-duration: 14s; }
+.balloon-6 { top: 40%; left: 35%; animation-duration: 20s; }
+.balloon-7 { top: 40%; left: 65%; animation-duration: 15s; }
+.balloon-8 { top: 50%; left: 30%; animation-duration: 22s; }
+.balloon-9 { top: 50%; left: 70%; animation-duration: 18s; }
+.balloon-10 { top: 60%; left: 25%; animation-duration: 21s; }
+.balloon-11 { top: 60%; left: 75%; animation-duration: 16s; }
+.balloon-12 { top: 70%; left: 40%; animation-duration: 19s; }
+.balloon-13 { top: 70%; left: 60%; animation-duration: 17s; }
+.balloon-14 { top: 80%; left: 50%; animation-duration: 13s; }
+.balloon-15 { top: 55%; left: 45%; animation-duration: 21s; }
+.balloon-16 { top: 65%; left: 35%; animation-duration: 14s; }
+.balloon-17 { top: 65%; left: 55%; animation-duration: 16s; }
+.balloon-18 { top: 75%; left: 30%; animation-duration: 18s; }
+.balloon-19 { top: 75%; left: 70%; animation-duration: 12s; }
+.balloon-20 { top: 85%; left: 50%; animation-duration: 23s; }
+.balloon-21 { top: 15%; left: 35%; animation-duration: 20s; }
+.balloon-22 { top: 5%; left: 50%; animation-duration: 15s; }
+.balloon-23 { top: 45%; left: 55%; animation-duration: 22s; }
+.balloon-24 { top: 5%; left: 40%; animation-duration: 19s; }
+
 
 
 @keyframes float {
