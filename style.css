@@ -1003,8 +1003,8 @@ body {
 
 .balloon {
   position: absolute;
-  width: 150px; 
-  height: 150px;
+  width: 100px; 
+  height: 100px;
   clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 80%, 18% 100%, 0% 35%);
   object-fit: contain; /* Đảm bảo ảnh không bị cắt xén */
   animation: float 15s infinite ease-in-out;
